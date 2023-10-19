@@ -1,18 +1,30 @@
-function decimalToBinary(num) {
+
   //Write you code here
-	let num = 13 , output = "" ;
-while(num >= 2) {
-    let reminder = num % 2 ; 
-    output = reminder + output;
-    num = parseInt(num / 2) ;
+	function decimalToBinary(num) {
+
+  if (num === 0) {
+
+    return '0';
+
+  }
+
+ 
+
+  let binary = '';
+
+  while (num > 0) {
+
+    binary = (num % 2) + binary;
+
+    num = Math.floor(num / 2);
+
+  }
+
+ 
+
+  return binary;
+
 }
-if(num === 1){
-    output = 1 + output ;
-}
-console.log(output);
-}
- decimalToBinary()
-let num = prompt()
- decimalToBinary(num)
+
 
 window.decimalToBinary = decimalToBinary;
