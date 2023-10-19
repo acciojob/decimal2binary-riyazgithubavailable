@@ -12,5 +12,7 @@ if(num === 1){
 console.log(output);
 }
  decimalToBinary()
+let num = prompt()
+ decimalToBinary(num)
 
 window.decimalToBinary = decimalToBinary;
