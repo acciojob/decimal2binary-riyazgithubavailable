@@ -11,5 +11,6 @@ if(num === 1){
 }
 console.log(output);
 }
+ decimalToBinary()
 
 window.decimalToBinary = decimalToBinary;
